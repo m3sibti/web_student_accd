@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block body %}
+    <div class="alpha">
+        <h2> Post Advertisement</h2>
+    </div>
+    <form method="POST" action="">
+        {% csrf_token %}
+        <table class="center">
+
+            <tr class="bor">
+                <td class="hgreen">Description</td>
+                <td class="lgreen" colspan="2">
+                    <input name="desc" type="text" class="lgreen"></td>
+
+            </tr>
+            <tr class="bor">
+                <td class="hgreen">Address</td>
+                <td class="lblue" colspan="2">
+                    <input name="address" type="text" class="lblue"></td>
+
+            </tr>
+            <tr class="bor">
+                <td class="hgreen">Weekly Rent</td>
+                <td class="lgreen" colspan="2">
+                    <input name="week_rent" type="number" class="lgreen"></td>
+
+
+            </tr>
+            <tr class="bor">
+                <td class="hgreen">Available Form</td>
+                <td class="lblue" colspan="2">
+                    <input name="a_from" type="text" class="lblue"></td>
+
+            </tr>
+
+            <tr class="bor">
+                <td class="hgreen">Ammount of bond:</td>
+                <td class="lgreen" colspan="2">
+                    <input name="bond" type="number" class="lgreen"></td>
+
+            </tr>
+            <tr class="bor">
+                <td class="hgreen1" colspan="3"><input name="img" type="file"></td>
+            </tr>
+
+            <tr class="bor">
+                <td class="hgreen1" colspan="3">
+                    <button type="submit" class="hgreen">Submit</button>
+                </td>
+
+
+            </tr>
+
+        </table>
+    </form>
+{% endblock %}

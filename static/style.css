@@ -1,0 +1,181 @@
+body {
+    background-color: skyblue;
+    padding-top: 50px;
+}
+
+.top-jumbo {
+    background: #f7f7f7;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    width: 98%;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.top-jumbo1 {
+    background: #f7f7f7;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    width: 95%;
+    margin-left: 35px;
+    margin-right: 2px;
+}
+
+.head {
+    margin-left: -15px;
+}
+
+.alpha {
+    text-align: center;
+}
+
+.center {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0px 10px 0px;
+
+}
+
+.white {
+    color: white;
+    col span: 2px;
+    padding: 10px 30px 10px 30px;
+}
+
+.green {
+    background-color: green;
+    color: white;
+    padding: 10px 50px 10px 50px;
+
+}
+
+.black {
+    color: black;
+
+    text-decoration: underline;
+}
+
+@media (min-width: 481px) {
+    .white {
+        color: white;
+        col span: 2px;
+        padding: 10px 10px px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-jumbo {
+        background: #f7f7f7;
+        border-radius: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: bold;
+        width: 95%;
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+
+    .top-jumbo1 {
+        background: #f7f7f7;
+        border-radius: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: bold;
+        width: 120%;
+        margin-left: 30px;
+
+    }
+
+    .white1 {
+        color: white;
+        padding: 10px 10px 10px 10px;
+    }
+}
+
+.white1 {
+    color: white;
+    padding: 15px 10px 15px 10px;
+}
+
+.hgreen {
+    width: 23%;
+    background-color: green;
+    padding: 10px 40px 10px 40px;
+    color: white;
+}
+
+.bor {
+    border: 1px solid black;
+}
+
+.lgreen {
+    background-color: #90EE90;
+}
+
+.lblue {
+    background-color: #add8e6;
+}
+
+.hgreen1 {
+    background-color: green;
+    padding: 10px 40px 10px 40px;
+    color: white;
+    text-align: center;
+    colspan: 2;
+}
+
+.white2 {
+    text-align: center;
+    color: white;
+
+    text-decoration: underline;
+}
+
+.beta {
+    text-align: center;
+}
+
+.lgreen1 {
+    background-color: #90EE90;
+    border: 1px solid black;
+    padding: 10px 40px 10px 40px;
+}
+
+.lblue1 {
+    background-color: #add8e6;
+    border: 1px solid black;
+    padding: 10px 40px 10px 40px;
+}
+
+input {
+    border: transparent;
+    background-color: skyblue;
+    width: 100%;
+}
+
+.lgreen2 {
+    background-color: #90EE90;
+    border: transparent;
+}
+
+.white2 {
+    color: white;
+    col span: 2px;
+
+}
+
+.lblue2 {
+    background-color: #add8e6;
+    border: 1px solid black;
+    padding: 10px 40px 10px 40px;
+}
+
+.lblue3 {
+    background-color: #add8e6;
+    border: transparent;
+}

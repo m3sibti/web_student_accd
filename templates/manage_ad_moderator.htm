@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block style %}
+    input {
+    border: transparent;
+    background-color: green;
+    width: 100%;
+    }
+{% endblock style %}
+{% block body %}
+    <div class="alpha">
+        <h2> Manage Advertisement:Moderator</h2>
+    </div>
+    <table class="center">
+
+
+        <tr class="bor">
+            <td class="hgreen">Advertisement ID</td>
+            <td class="hgreen1" colspan="2">Operations</td>
+
+
+        </tr>
+        <tr class="bor">
+            <td class="hgreen"
+            "><input type="text"></td>
+            <td class="lgreen1">
+                <button type="Radio Button" class="lgreen2">Accept
+            </td>
+            <td class="lgreen1">
+                <button type="Radio Button" class="lgreen2">Delete
+            </td>
+
+        </tr>
+        <tr class="bor">
+            <td class="hgreen"><input type="text"></td>
+            <td class="lblue2">
+                <button type="Radio Button" class="lblue3">Accept
+            </td>
+            <td class="lblue2">
+                <button type="Radio Button" class="lblue3">Delete
+            </td>
+
+
+    </table>
+
+{% endblock body %}

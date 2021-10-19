@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block body %}
+
+    {% if is_login == True %}
+        <div class="alpha">
+            <h2>Welcome to your profile</h2>
+        </div>
+        <div>
+            <a href="{% url 'manage_ad_ll' %}">
+                <button>Manage Advertisements</button>
+            </a>
+            <a href="{% url 'post_ad' %}">
+                <button>Post Advertisements</button>
+            </a>
+            <a href="{% url 'logout' %}">
+                <button style="color: red">Logout</button>
+            </a>
+        </div>
+    {% else %}
+        <div class="alpha">
+            <h2>Login</h2>
+        </div>
+        <form method="POST" action="">
+            {% csrf_token %}
+            <table class="center">
+                <tr class="bor">
+                    <td class="hgreen">Username</td>
+                    <td class="lgreen" colspan="2">
+                        <input type="text" name="usrname" class="lgreen"></td>
+                </tr>
+                <tr class="bor">
+                    <td class="hgreen">Password:</td>
+                    <td class="lblue" colspan="2">
+                        <input type="password" name="pwd" class="lblue"></td>
+                </tr>
+                <tr class="bor">
+                    <td class="hgreen1" colspan="3">
+                        <button type="submit" class="hgreen">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    {% endif %}
+
+{% endblock body %}

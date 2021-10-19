@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block style %}
+    input {
+    border: transparent;
+    background-color: green;
+    width: 100%;
+    }
+{% endblock style %}
+{% block body %}
+    <div class="alpha">
+        <h2> Manage Advertisement:landlord</h2>
+    </div>
+    <table class="center">
+
+
+        <tr class="bor">
+            <td class="hgreen">Advertisement ID</td>
+            <td class="hgreen1" colspan="3">Operations</td>
+
+
+        </tr>
+        {% for ad in ads %}
+
+            <tr class="bor">
+                <td class="hgreen">{{ ad.address }}</td>
+                <td class="lgreen1">
+                    <a href="/admin">
+                        <button class="lgreen2">
+                            Edit
+                        </button>
+                    </a>
+                </td>
+                <td class="lgreen1">
+                    <a href="{% url 'del_ad' ad.id %}">
+                        <button class="lgreen2">
+                            Delete
+                        </button>
+                    </a>
+                </td>
+                <td class="lgreen1">
+                    <button class="lgreen2">
+                        View statistics
+                    </button>
+                </td>
+            </tr>
+        {% endfor %}
+        <tr class="bor">
+            <td class="hgreen"><input type="text"></td>
+            <td class="lblue" colspan="3">
+                <input type="text" class="lblue"></td>
+
+
+    </table>
+
+{% endblock body %}

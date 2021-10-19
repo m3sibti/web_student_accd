@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block body %}
+    <div class="alpha">
+        <h2> Advertisement </h2>
+    </div>
+    <table class="center">
+        <tr>
+            <td class="white2">Sr.<br> No.</td>
+            <td class="green">Date</td>
+            <td class="white">Addres</td>
+            <td class="white">Weekly Rent</td>
+            <td class="white">Landlord</td>
+            <td class="white">&nbsp;</td>
+        </tr>
+        {% for ad in ads %}
+            {#            loop through all ads to display results#}
+            <tr>
+                <td class="white1">{{ ad.id }}</td>
+                <td>{{ ad.date }}</td>
+                <td>{{ ad.address }}</td>
+                <td><b>{{ ad.weekly_rent }}</b></td>
+                <td>{{ ad.add_by }}</td>
+                <td><a href="/admin" class="black">View</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+
+{% endblock body %}
